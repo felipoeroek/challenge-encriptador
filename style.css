@@ -156,5 +156,22 @@ div div button:hover{
     background-size: cover;
 }
 
+/* footer datos extras */
+
+footer{
+
+    width: 30%;
+    position: absolute;
+    margin: -30vh 55vw;
+    font-size: 1.3em;
+    opacity: 0.7;
+}
+
+footer img{
+
+    width: 12%;
+    vertical-align: middle;
+    padding: 30px 50px;
+}
 
 
