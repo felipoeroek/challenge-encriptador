@@ -1,0 +1,160 @@
+/* Globales */
+
+body{
+
+    background-image: url(imagenes/vegeta_fondo_principal.jpg);
+}
+
+/* Estilos header */
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header h1{
+
+    width: 70%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 0 0 10px #00ccff;  
+}
+
+header img{
+
+    width: 15%;
+    height: 150px;
+}
+
+/* Estilos areas texto_encriptado_desencriptado */
+
+.texto_encriptado{
+
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+    justify-content: space-between;
+}
+
+div textarea{
+
+    width: 49%;
+    height: 65vh;
+    background-image: url(imagenes/majin_vegeta.jpg);
+    background-repeat: no-repeat;
+    background-position: 0;
+    resize: none;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 0 0 15px black;
+    border: 5px solid black;
+    border-radius: 40px;  
+}
+
+div textarea::placeholder{
+
+    color: white;
+}
+
+div div{
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 25%;
+    height: 74vh;
+    background: linear-gradient(180deg, white 30%, #00ccff);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 0 7px 10px 2px black;
+}
+
+div div img:first-child{
+
+    width: 60%;
+}
+
+div div img:not(:first-child){
+
+    margin-top: 45px;
+    width: 60%;
+}
+
+/* resultado texto encriptado-desencriptado */
+
+#resultado{
+
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    height: 400px;
+    width: 85%;
+}
+
+textarea:focus{
+
+    outline: none;
+}
+
+div div button{
+
+   position: absolute;
+   margin-top: 520px;
+   padding: 20px 5%;
+   background-color: transparent;
+   border: 5px solid white;
+   border-radius: 20px;
+   font-weight: 800;
+   transition: 0.5s all;
+}
+
+div div button:hover{
+
+    background-color: white;
+}
+
+/* botones encriptar y desencriptar */
+.boton-encriptar{
+
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.boton-encriptar button{
+
+    margin: -90px 0 -0 5vw;
+    padding: 19px 5vw;
+    background: linear-gradient(290deg, #00ccff, yellow);
+    border-radius: 20px;
+    border-width: 1.9px;
+    transition: all 1s;
+    font-size: 1.5em;
+}
+
+.boton-encriptar button:hover:first-child{
+
+    opacity: 0.7;
+    background: url(https://c.tenor.com/o3vjZ7ky3vQAAAAC/majin-vegeta-smile.gif) no-repeat;
+    background-size: cover;
+}
+
+.boton-encriptar button:hover:last-of-type{
+
+    opacity: 0.7;
+    background: url(https://pa1.narvii.com/7046/b04e1d9a4350cf509b7783db3c493578587022d0r1-500-281_hq.gif) no-repeat;
+    background-size: cover;
+}
+
+
+
