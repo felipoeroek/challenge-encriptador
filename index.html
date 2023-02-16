@@ -7,65 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador/Desencriptador</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <link rel="icon" href="imagenes/icono.png">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header/header.css">
+    <link rel="stylesheet" href="assets/css/div.encriptar-desencriptar/encriptar-desencriptar.css">
+    <link rel="stylesheet" href="assets/css/div.boton-encriptar-desencriptar/boton-encriptar-desencriptar.css">
+    <link rel="stylesheet" href="assets/css/rodapie/rodapie.css">
+
 </head>
 
 <body>
     
-    <header>
+    <header class="header">
 
-    <img src="imagenes/z_logo.png">
-    <img src="imagenes/logo_super.png">
-    <h1>Encriptador/Desencriptador el <br> principe de la destrucción</h1>
+        <img src="imagenes/z_logo.png" class="header__imagen">
+        <img src="imagenes/logo_super.png" class="header__imagen">
+        <h1 class="header__titulo">Encriptador/Desencriptador el <br> principe de la destrucción</h1>
 
     </header>
 
-    <div class="texto_encriptado">
+    <div class="encriptar-desencriptar">|
 
-    <textarea placeholder="Ingrese el texto aqui" id="texto-encriptar"></textarea>
-    <div>
+        <textarea placeholder="Ingrese el texto aqui" id="texto-encriptar" class="encriptar-desencriptar__area-encriptar"></textarea>
+        <div class="encriptar-desencriptar__area-resultado">
 
-        <img src="imagenes/vegeta_logo.png" class="ocultar">
-        <img src="imagenes/Ningún mensaje fue encontrado.png" class="ocultar">
-        <img src="imagenes/Ingresa el texto que desees encriptar o desencriptar.png" class="ocultar">
+            <img src="imagenes/vegeta_logo.png" class="ocultar encriptar-desencriptar__area-resultado__imagenes">
+            <img src="imagenes/Ningún mensaje fue encontrado.png" class="ocultar encriptar-desencriptar__area-resultado__imagenes">
+            <img src="imagenes/Ingresa el texto que desees encriptar o desencriptar.png" class="ocultar encriptar-desencriptar__area-resultado__imagenes">
 
-        <!--texto para copiar, se agrega un style inline para que se pueda cambiar el display con JS-->
+            <!--texto para copiar, se agrega un style inline para que se pueda cambiar el display con JS-->
 
-        <textarea id="resultado" style="display: none;"></textarea>
-        <button id="boton-copiar" style="display: none;">Copiar</button>
+            <textarea id="resultado" class="encriptar-desencriptar__area-resultado__area-visible"></textarea>
+            <button id="boton-copiar" class="encriptar-desencriptar__area-resultado__boton-copiar">Copiar</button>
+
+        </div>
 
     </div>
+    <div class="boton-encriptar-desencriptar">
 
-    </div>
-    <div class="boton-encriptar">
-
-        <button id="chacha">Encriptar</button>
-        <button id="desen">Desencriptar</button>
+        <button id="chacha" class="boton-encriptar-desencriptar__boton">Encriptar</button>
+        <button id="desen" class="boton-encriptar-desencriptar__boton">Desencriptar</button>
         
     </div>
 
-    <footer>
+    <footer class="rodapie">
 
-        <a href="https://www.linkedin.com/in/hernanperezfree/" target="_blank">
+        <a href="https://www.linkedin.com/in/hernanperezfree/" target="_blank" class="rodapie__enlace">
 
-            <ul>
+            <ul class="rodapie__enlace__lista">
 
-                <img src="imagenes/linkedin_icono.png" style="width: 20%;
-                padding: 0 30px;">
+                <img src="imagenes/linkedin_icono.png" class="rodapie__enlace__lista__imagen" style="width: 30%; padding: 0 2rem; height: 70px;">
+
             </ul>
+
         </a>
 
-        <a href="https://github.com/felipoeroek" target="_blank">
+        <a href="https://github.com/felipoeroek" target="_blank" class="rodapie__enlace">
 
-            <ul>
+            <ul class="rodapie__enlace__lista">
 
-                <img src="imagenes/github_icono.png">
+                <img src="imagenes/github_icono.png" class="rodapie__enlace__lista__imagen">
+
             </ul>
+
         </a>
-        <p>Hernán Felipe Pérez Díaz</p>
+        <p class="rodapie__texto">Hernán Felipe Pérez Díaz</p>
         
     </footer>
 
@@ -92,8 +100,8 @@
             oculto[ocultar].style.display = 'none';
         }
 
-        visibleArea.style.display = '';
-        visibleBoton.style.display = '';
+        visibleArea.style.display = 'block';
+        visibleBoton.style.display = 'block';
     }
 
     // se repite un array debido que el array letras guarda sus resultados con otra igualdad de un bucle con if y no deja con vocales repetidas

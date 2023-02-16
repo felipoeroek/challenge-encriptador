@@ -1,0 +1,57 @@
+/* Estilos header */
+
+.header{
+
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+}
+
+.header__imagen{
+
+    width: 20%;
+    height: 16vh;
+}
+
+.header__titulo{
+
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px #00ccff;  
+}
+
+/*RESPONSIVIDAD*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 767.89px) {
+
+    .header {
+
+        flex-direction: column;
+        height: 350px;
+        margin-bottom: 0;
+    }
+
+    .header__imagen {
+
+        height: 100px;
+        width: 60%;
+    }
+
+    .header__titulo {
+
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px) {
+
+    .header__titulo {
+
+        font-size: 1.5rem;
+    }
+}

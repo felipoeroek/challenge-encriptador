@@ -1,0 +1,23 @@
+/* Globales */
+:root {
+
+    --fuente: 'Ubuntu', sans-serif;
+}
+
+
+body{
+
+    background: url(../../imagenes/vegeta_fondo_principal.jpg) no-repeat center center;
+    background-size: cover;
+    font-family: var(--fuente);
+}
+
+textarea {
+
+    resize: none;
+}
+
+textarea:focus{
+
+    outline: none;
+}

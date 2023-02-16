@@ -1,0 +1,74 @@
+/* botones encriptar y desencriptar */
+.boton-encriptar-desencriptar{
+
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-left: 3vw;
+}
+
+.boton-encriptar-desencriptar__boton{
+
+    padding: 1.7rem 4rem;
+    background: linear-gradient(290deg, #00ccff, yellow);
+    border-radius: 20px;
+    border-width: 1.9px;
+    transition: all 1s;
+    font-size: 1.2em;
+}
+
+.boton-encriptar-desencriptar__boton:hover:first-child{
+
+    opacity: 0.7;
+    background: url(https://c.tenor.com/o3vjZ7ky3vQAAAAC/majin-vegeta-smile.gif) no-repeat;
+    background-size: cover;
+}
+
+.boton-encriptar-desencriptar__boton:hover:last-of-type{
+
+    opacity: 0.7;
+    background: url(https://pa1.narvii.com/7046/b04e1d9a4350cf509b7783db3c493578587022d0r1-500-281_hq.gif) no-repeat;
+    background-size: cover;
+}
+
+/*RESPONSIVIDAD*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 767.89px) {
+
+    .boton-encriptar-desencriptar {
+
+        justify-content: space-evenly;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .boton-encriptar-desencriptar__boton {
+
+        padding: 1.7rem 1rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px) {
+
+    .boton-encriptar-desencriptar {
+
+        margin-left: 4vw;
+    }
+
+    .boton-encriptar-desencriptar__boton {
+
+        padding: 1.4rem 2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px){
+
+    .boton-encriptar-desencriptar__boton {
+
+        padding: 1.2rem 2rem;
+    }
+}

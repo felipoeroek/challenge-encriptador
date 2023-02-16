@@ -1,0 +1,59 @@
+/* footer datos extras */
+
+.rodapie{
+
+    width: 30%;
+    position: absolute;
+    margin: -285px 50%;
+    font-size: 1.3em;
+    opacity: 0.7;
+}
+
+.rodapie__enlace__lista__imagen{
+
+    width: 20%;
+    height: 60px;
+    vertical-align: middle;
+    padding: 30px 50px;
+}
+
+/*RESPONSIVIDAD*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 767.89px) {
+
+    .rodapie {
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 2rem;
+        position: relative;
+        width: 100%;
+    }
+
+    .rodapie__enlace__lista__imagen {
+
+        width: 30%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px){
+
+    .rodapie {
+
+        margin: -274px 49%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px){
+
+    .rodapie {
+
+        margin: -260px 50%;
+    }
+}

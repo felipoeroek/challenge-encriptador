@@ -1,0 +1,148 @@
+/* Estilos areas texto_encriptado_desencriptado */
+
+.encriptar-desencriptar{
+
+    display: flex;
+    margin: 0 3rem;
+}
+
+.encriptar-desencriptar__area-encriptar{
+
+    height: 65vh;
+    background: url(../../../imagenes/majin_vegeta.jpg) no-repeat center center;
+    background-size: cover;
+    resize: none;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 0 0 15px black;
+    border: 5px solid black;
+    border-radius: 40px;  
+    width: 45%;
+    margin-right: 15vw;
+}
+
+.encriptar-desencriptar__area-encriptar::placeholder{
+
+    color: white;
+}
+
+.encriptar-desencriptar__area-resultado{
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 74vh;
+    background: linear-gradient(180deg, white 30%, #00ccff);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 0 7px 10px 2px black;
+    width: 30%;
+}
+
+.encriptar-desencriptar__area-resultado__imagenes:first-child{
+
+    width: 40%;
+}
+
+.encriptar-desencriptar__area-resultado__imagenes:not(:first-child){
+
+    margin-top: 45px;
+    width: 40%;
+}
+
+/* resultado texto encriptado-desencriptado */
+
+.encriptar-desencriptar__area-resultado__area-visible{
+
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    display: none;
+    height: 400px;
+    width: 85%;
+    font-size: 2rem;
+}
+
+.encriptar-desencriptar__area-resultado__boton-copiar{
+
+   position: absolute;
+   margin-top: 420px;
+   padding: 20px 5%;
+   background-color: transparent;
+   border: 5px solid white;
+   border-radius: 20px;
+   font-weight: 800;
+   z-index: 99;
+   transition: 0.5s all;
+   display: none;
+}
+
+.encriptar-desencriptar__area-resultado__boton-copiar:hover {
+
+    background-color: white;
+}
+
+/*RESPONSIVIDAD*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 767.89px) {
+
+    .encriptar-desencriptar {
+
+        flex-direction: column;
+        height: 800px;
+        justify-content: space-around;
+        margin: 0 2rem;
+    }
+
+    .encriptar-desencriptar__area-encriptar {
+
+        height: 300px;
+        width: 95%;
+    }
+
+    .encriptar-desencriptar__area-encriptar::placeholder {
+
+        font-size: 1.5rem;
+    }
+
+    .encriptar-desencriptar__area-resultado {
+
+        height: 300px;
+        width: 95%;
+    }
+
+    .encriptar-desencriptar__area-resultado__imagenes:first-child {
+
+        width: 100px;
+    }
+
+    .encriptar-desencriptar__area-resultado__imagenes:not(:first-child) {
+
+        width: 150px;
+    }
+
+    .encriptar-desencriptar__area-resultado__boton-copiar {
+
+        margin-top: 180px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px) {
+
+    .encriptar-desencriptar__area-encriptar::placeholder {
+
+        font-size: 1.5rem;
+    }
+
+    .encriptar-desencriptar__area-resultado__boton-copiar {
+
+        margin-top: 380px;
+    }
+}
